@@ -35,8 +35,12 @@ $(window).scroll(function(){
   }
   // start by getting another scroll position and if bigger than large-window,
   if (wScroll > $('.large-window').offset().top -$(window).height()) {
-    //this replicates the image in the periscope to give a parralax effect that makes it seem like two images at once
-    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top +'px')})
+      //this replicates the image in the periscope to give a parralax effect that makes it seem like two images at once
+     $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top +'px')})
+
+     var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5)
+
+     $('.window-tint').css({'opacity': opacity})
 
   }
 
