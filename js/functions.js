@@ -20,10 +20,13 @@ $(window).scroll(function(){
   // delayed trigger
   if(wScroll > $('.clothes-pics').offset().top){
     // itterating over each figure and manipulating it using this function
-    $('.clothes-pics figure').each(function(){
-
-      $('.clothes-pics figure').addClass('.is-showing');
-
+    $('.clothes-pics figure').each(function(i){
+      // this delays any action until a certain time reaches
+       setTimeout(function(){
+       // this adds the is showing class when the scroll position reaches this div
+      // the i represents each clothe and 150 is the amount of seconds then adds 150 to the second div and so on
+       $('.clothes-pics figure').eq(i).addClass('is-showing');
+     }, 150 * (i+1));
     });
 
 
