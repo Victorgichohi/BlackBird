@@ -17,9 +17,16 @@ $(window).scroll(function(){
     //this makes the forebird like move at a really slower speed as the rest
         'transform' : 'translate(0px, '+ wScroll/40 +'%)'
   });
-
+  // delayed trigger
   if(wScroll > $('.clothes-pics').offset().top){
-    console.log("victor");
+    // itterating over each figure and manipulating it using this function
+    $('.clothes-pics figure').each(function(){
+
+      $('.clothes-pics figure').addClass('.is-showing');
+
+    });
+
+
   }
 
 });
