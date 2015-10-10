@@ -1,36 +1,60 @@
-/*
-Error: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.
-        on line 39 of /home/victor/Desktop/my_projects/DanielWellington/css/layout1.sass
+body {
+  font-family: "Open Sans", sans-serif; }
 
-34:     attatchment: fixed
-35: .logo
-36:   height: 100px
-37:   width: 100%
-38:   background:
-39:      color:pink
-40:      image: url(/images/black-bird-logo.svg)
-41:      position: center
-42:      repeat: no-repeat
-43:   position: absolute
-44:   top: 50%
+h1 {
+  color: #ccc;
+  weight: 300; }
 
-Backtrace:
-/home/victor/Desktop/my_projects/DanielWellington/css/layout1.sass:39
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:473:in `block in tabulate'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:431:in `each'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:431:in `each_with_index'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:431:in `tabulate'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:404:in `run'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:18:in `load'
-/usr/share/koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 39 of /home/victor/Desktop/my_projects/DanielWellington/css/layout1.sass\A \A 34:     attatchment: fixed\A 35: .logo\A 36:   height: 100px\A 37:   width: 100%\A 38:   background:\A 39:      color:pink\A 40:      image: url(/images/black-bird-logo.svg)\A 41:      position: center\A 42:      repeat: no-repeat\A 43:   position: absolute\A 44:   top: 50%"; }
+figure {
+  margin: auto; }
+
+.content article {
+  padding: 100px;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center; }
+
+img {
+  max-width: 100%; }
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url(/images/bird-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attatchment: fixed;
+  overflow: hidden; }
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-color: pink;
+  background-image: url(/images/black-bird-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url(/images/fore-bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px; }
+
+.black-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url(/images/back-bird.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: rgba(255, 192, 203, 0.6);
+  position: absolute;
+  left: 50%;
+  margin-left: -480px; }
