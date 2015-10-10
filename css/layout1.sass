@@ -86,22 +86,29 @@ img
     transform: translateX(-20px)
     transition: all 0.3s ease-in-out
     overflow: hidden
+    cursor: pointer
     // this & is just stating what happens when that class reaches
     &.is-showing
       opacity: 1
       transform: translateX(0px)
-
+    // the zooming effect
     img
       display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
 
+    // the hover effect
     &:hover
       figcaption
         left: 0%
-
+      // the zoomeffect
+      img
+        transform: scale(1.1)
+    //the caption 
     figcaption
       position: absolute
       bottom: 10px
-      left: -100px
+      left: -100%
       background: black
       color: white
       padding: 2px 8px
