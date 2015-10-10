@@ -129,22 +129,34 @@ img
   // 50% gives the radius a circular effect
   border-radius: 50%
   position: relative
-// the tint window
-.window-tint
-  background-color: rgba(0,0,0,0.5)
-  position: absolute
-  //the zeros just make it fit with the main div
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  border-radius: 50%
-  display: flex
-  justify-content: center
-  align-items: center
+  // the tint window
+  .window-tint
+    background-color: rgba(0,0,0,0.5)
+    position: absolute
+    //the zeros just make it fit with the main div
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
 
-//propmo text
-.promo-text
-  color: white
-  font-weight: 100
-  font-size: 50px
+  //propmo text
+  .promo-text
+    color: white
+    font-weight: 100
+    font-size: 50px
+    line-height: 1.2
+
+  strong
+    font-size: 30px
+    display: block
+
+  span
+    font:
+      weight: 300
+      size: 18px
+      style: italic
+    color: rgba(255,255,255,0.6)
