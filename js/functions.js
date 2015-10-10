@@ -18,5 +18,8 @@ $(window).scroll(function(){
         'transform' : 'translate(0px, '+ wScroll/40 +'%)'
   });
 
+  if(wScroll > $('.clothes-pics').offset().top){
+    console.log("victor");
+  }
 
 });
