@@ -8,5 +8,15 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll/2 +'%)'
   });
 
+  $('.back-bird').css({
+    // when you devide by four,the backbird moves at half the speed of the for bird
+    'transform' : 'translate(0px, '+ wScroll/4 +'%)'
+  });
+
+  $('.logo').css({
+    // when you devide by two,the midground moves at half the slow speed
+    'transform' : 'translate(0px, '+ wScroll/2 +'%)'
+  });
+
 
 });
