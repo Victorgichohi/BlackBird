@@ -96,4 +96,13 @@ img {
   background-repeat: repeat-y;
   background-attachment: fixed;
   margin-top: 100px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
+
+.window-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
