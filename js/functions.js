@@ -33,5 +33,10 @@ $(window).scroll(function(){
 
 
   }
+  // start by getting another scroll position
+  if (wScroll > $('.large-window').offset().top) {
+    console.log('vicagain')
+
+  }
 
 });
