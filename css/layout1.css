@@ -65,7 +65,8 @@ img {
     position: relative;
     opacity: 0;
     transform: translateX(-20px);
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; }
     .clothes-pics figure.is-showing {
       opacity: 1;
       transform: translateX(0px); }
