@@ -18,7 +18,9 @@ $(window).scroll(function(){
         'transform' : 'translate(0px, '+ wScroll/40 +'%)'
   });
   // delayed trigger
-  if(wScroll > $('.clothes-pics').offset().top){
+  if(wScroll > $('.clothes-pics').offset().top -
+  // these window allows the elements to scroll in after a certain measurement of the browser window
+  ($(window).height() / 1.2)){
     // itterating over each figure and manipulating it using this function
     $('.clothes-pics figure').each(function(i){
       // this delays any action until a certain time reaches
