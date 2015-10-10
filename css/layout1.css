@@ -122,3 +122,13 @@ img {
     font-size: 18px;
     font-style: italic;
     color: rgba(255, 255, 255, 0.6); }
+  .large-window .window-cta {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out; }
+    .large-window .window-cta:hover {
+      background: white;
+      color: black; }
