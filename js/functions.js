@@ -13,9 +13,9 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll/4 +'%)'
   });
 
-  $('.logo').css({
-    // when you devide by two,the midground moves at half the slow speed
-    'transform' : 'translate(0px, '+ wScroll/2 +'%)'
+  $('.fore-bird').css({
+    //this makes the forebird like move at a really slower speed as the rest
+        'transform' : 'translate(0px, '+ wScroll/40 +'%)'
   });
 
 
