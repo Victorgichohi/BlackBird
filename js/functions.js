@@ -1,17 +1,9 @@
 $(window).scroll(function(){
 
-    var wScroll= $(this).scrollTop();
+  //this function tells how far the postion one has scrolled from the top
+  var wScoll=$(this).scrollTop();
+  // THIS WILL HELP IN SHOWING THE AMOUNT ONE HAS SCROLLED
+  console.log('hello')
 
-    $('.logo').css({
-      'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-    });
-
-    $('.back-bird').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-    });
-
-    $('.fore-bird').css({
-      'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-    });
 
 });
