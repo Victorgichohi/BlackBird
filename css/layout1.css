@@ -23,7 +23,7 @@ img {
   background-image: url(../images/bird-bg.jpg);
   background-size: auto 600px;
   background-position: top center;
-  background-attatchment: fixed;
+  background-attachment: fixed;
   overflow: hidden; }
 
 .logo {
@@ -48,7 +48,7 @@ img {
   margin-left: -480px;
   top: 380px; }
 
-.black-bird {
+.back-bird {
   width: 960px;
   height: 298px;
   background-image: url(../images/back-bird.png);

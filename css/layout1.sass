@@ -23,16 +23,18 @@ img
 
 
 // Parallax
-
+// this is the header
 .bird-box
   position: relative
   height: 600px
   background:
     image: url(../images/bird-bg.jpg)
+    // if we used contain,it will stretch the image to as it is contained in  the box
     size: auto 600px
     position: top center
-    attatchment: fixed
-    // this makes the image actally not move
+    // this type of styling makes the background image not move
+    attachment: fixed
+    // this removes the wood in the bird as the other div comes above it
   overflow: hidden
 .logo
   height: 100px
@@ -42,6 +44,7 @@ img
     image: url(../images/black-bird-logo.svg)
     position: center
     repeat: no-repeat
+  // this makes the logo at the center
   position: absolute
   top: 50%
   margin-top: -50px
@@ -50,6 +53,7 @@ img
   width: 960px
   height: 733px
   background:
+    // this transparentize effect produces rgb properties of image when renderd,0.4 is the opacity
     //color: transparentize(pink, 0.4)
     image: url(../images/fore-bird.png)
     repeat: no-repeat
@@ -59,7 +63,7 @@ img
   margin-left: -480px
   top: 380px
 
-.black-bird
+.back-bird
   width: 960px
   height: 298px
   background:
